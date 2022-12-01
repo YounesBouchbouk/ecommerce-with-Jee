@@ -136,27 +136,72 @@
                         <h2>Register</h2>
                     </div>
                 </div>
+                
+                <% 
+  
+  if(request.getAttribute("error") != null){
+	  
+	  
+ 	  
+%>
+                
+                <div class="alert alert-danger" role="alert">
+  					${error} 
+					</div>
+					
+					<% 
+  
+  }
+	  
+	  
+ 	  
+%>
+
+ <% 
+  
+  if(request.getAttribute("succ") != null){
+	  
+	  
+ 	  
+%>
+                
+                <div class="alert alert-success" role="alert">
+  					${succ} 
+					</div>
+					
+					<% 
+  
+  }
+	  
+	  
+ 	  
+%>
 
                 <main class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8 mx-auto bg-white py-3 mb-4">
                         <div class="row">
                             <div class="col-12">
-                                <form>
+                                <form action="/Ecom/register" method="post">
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input type="text" id="name" class="form-control" required>
+                                        <label for="name" class="form-label">Last Name :</label>
+                                        <input type="text" id="lastName" name="lastName" class="form-control" required>
                                     </div>
+                                     <div class="mb-3">
+                                        <label for="name" class="form-label">First Name :</label>
+                                        <input type="text" id="firstName" name="firstName" class="form-control" required>
+                                    </div>
+                                    
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" id="email" class="form-control" required>
+                                        <input type="email" id="email" name="email" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" id="password" class="form-control" required>
+                                        <input type="password" id="password" name="password" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="password-confirm" class="form-label">Confirm Password</label>
-                                        <input type="password" id="password-confirm" class="form-control" required>
+                                        <input type="password" id="password-confirm" name="password-confirm" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <div class="form-check">
