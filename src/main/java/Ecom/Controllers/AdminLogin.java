@@ -43,7 +43,7 @@ public class AdminLogin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+//		doGet(request, response);
 		int adminId=Integer.parseInt(request.getParameter("adminId"));
 		String pass=request.getParameter("password");
 		java.sql.Connection conn = dbConnection.getConnection();
@@ -54,7 +54,7 @@ public class AdminLogin extends HttpServlet {
 			ResultSet rs = pst.executeQuery();
 			boolean exist=false;
 		    while ( rs.next() ){
-		    	if(adminId==rs.getInt("adminId") && pass==rs.getString("adminMotPass")){
+		    	if(adminId==rs.getInt("adminId") && pass.equals(rs.getString("adminMotPasse"))){
 		    		exist=true;
 		    	}
 		    }
@@ -62,7 +62,11 @@ public class AdminLogin extends HttpServlet {
 		    	HttpSession session = request.getSession();
 		    	session.setAttribute("adminId", adminId);
 				session.setMaxInactiveInterval(60*30*30*1000);
+				response.sendRedirect("/Ecom/dashboard/index.jsp");
 	        }
+		    else {
+		    	response.getWriter().append("Error");
+		    }
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
