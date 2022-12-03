@@ -1,0 +1,542 @@
+
+
+
+\begin{center}
+\chapter{Contexte Général du Projet}
+\end{center}
+
+Il s'agit dans cette première section de mettre en exergue la toile de fond du présent projet, en présentant les besoins sous-jacents, le cahier de charge ainsi que les différentes phases de conception et de spécification qui s'y rapportent.
+\vspace{1cm}
+\section{Présentation du Thème}
+\vspace{.5cm}
+
+L’émergence du e-commerce, depuis plus d’une dizaine d’années, a réellement changé les règles du jeu pour tous les commerçants. Le secteur de la pharmacie a, été préservé (grâce à la législation en vigueur) durant plusieurs années. Cependant, ce marché de la pharmacie en ligne est actuellement naissant et en pleine croissance. Il est par ailleurs essentiellement conquis par de gros acteurs de la grande distribution et des « pureplayers » étrangers profitant de législations parfois beaucoup plus souples. À l’heure où une pharmacie ferme tous les 2 jours au Maroc, le e-commerce de produits de pharmacie se présente aux pharmaciens à la fois comme une menace (il pourrait faire perdre de précieuses parts de marché aux pharmacies et fragiliser ainsi un peu plus les pharmacies marocaines) et comme une opportunité (car il pourrait également leur permettre de conquérir de nouvelles parts de marché tout en fidélisant d’avantage leur clientèle et ainsi pérenniser le commerce de nombreuses officines).
+\\ \\
+Les enjeux sont également de santé publique car les pharmaciens sont les premiers professionnels de santé de proximité garant de la sécurisation du circuit du médicament via la répartition géographique des officines. Ils permettent ainsi aux cityoens de jouir d’un des meilleurs systèmes de distribution de médicaments au monde tant sur le plan de la sécurité, du prix, et de l’accessibilité au médicament.
+\\ \\
+Les pharmacies peuvent-elles faire l’impasse sur le digital et les conséquences qu’il a sur les comportements d’achat? L’arrivée de nouveaux entrants (GAFA, NATU, pureplayers de la vente en ligne...) conduit à une nouvelle « redistribution des cartes » dans le secteur de la distribution pharmaceutique. Le passage au digital et plus particulièrement au e-commerce pourrait directement faire passer les pharmacies d’un environnement concurrentiel local et relativement faible, a un environnement concurrentiel national voire international, beaucoup plus important. Une concurrence plus forte conduira directement à une baisse des prix, donc des marges et obligera les pharmacies à s’orienter vers une stratégie de volume qui est par ailleurs le domaine d’expertise de gros acteurs de la grande distribution comme Leclerc\textsuperscript{®} ou Amazon\textsuperscript{®}.
+\\ \\
+À travers une étude détaillée des pratiques actuelles, des solutions proposées aux pharmaciens et des attentes de consommateurs, ce travail a pour objectif d'établir une plate-forme web pour la vente en ligne de médicaments ainsi que divers produits ayant trait à la santé, à l'hygiène et aux soins du corps. Notre conception vise à fluidifier la navigation du client sur le site moyennant un moteur de recherche pertinent. Comme pour tout type d’achat, le prix fait toujours partie des critères de sélection des consommateurs. La pharmacie en ligne n’échappe pas à cette règle. Les internautes identifient donc la meilleure enseigne dans ce domaine grâce à l’existence des prix attractifs et des promotions régulières. Les administrateurs de notre plateforme de ventes de médicaments misent sur le tarif pour attirer davantage l’attention des clients potentiels.
+
+
+\vspace{1cm}
+\section{Besoins Fonctionnels}
+\vspace{.5cm}
+
+Les besoins fonctionnels désignent les fonctionnalités concrètes de la plate-forme, et peuvent être classés, de manière non exhaustive, selon les catégories suivantes :
+\vspace{.3cm}
+\subsection{Gestion de l'Administration}
+\vspace{.3cm}
+\begin{itemize}
+\item[$\bullet$] Identification \& Inscription.
+\item[$\bullet$] Ajout, Modification et Consultation des informations d'un utilisateur.
+\item[$\bullet$] Affichage de la liste des utilisateurs.
+\item[$\bullet$] Désactivation d'un compte utilisateur.
+\item[$\bullet$] Consultation des statistiques de la plate-forme.
+\end{itemize}
+\vspace{.3cm}
+\subsection{Gestion de l'Achat en ligne}
+\vspace{.3cm}
+\begin{itemize}
+\item[$\bullet$] Modification des informations d'un client.
+\item[$\bullet$] Consultation et Désactivation d'un compte client.
+\item[$\bullet$] Passage d'une commande avec livraison.
+\item[$\bullet$] Liste des commandes par tri.
+\item[$\bullet$] Mise à jour de l'état d'une commande.
+\item[$\bullet$] Suivi des commandes
+\item[$\bullet$] Ajouter un produit au panier.
+\item[$\bullet$] Lister des produits dans un panier.
+\item[$\bullet$] Retirer un produit du panier.
+\item[$\bullet$] Personnaliser le contenu du panier.
+\item[$\bullet$] Vider le panier.
+\item[$\bullet$] Recherche guidée d'un produit.
+\item[$\bullet$] Recherche par mot-clé.
+\end{itemize}
+\vspace{.3cm}
+\subsection{Gestion Commerciale}
+\vspace{.3cm}
+\begin{itemize}
+\item[$\bullet$] Ajouter \& Modifier un produit.
+\item[$\bullet$] Taxe des produits.
+\item[$\bullet$] Consulter la fiche d'un produit.
+\item[$\bullet$] Afficher la liste des produits.
+\item[$\bullet$] Trier les produits par critères.
+\item[$\bullet$] Changer catégorie d'un produit.
+\item[$\bullet$] Changer la marque d'un produit.
+\item[$\bullet$] Supprimer un produit.
+\item[$\bullet$] Ajout, Modification \& Suppression d'un produit.
+\item[$\bullet$] Ajout, Modification \& Suppression d'une marque.
+\item[$\bullet$] Ajout, Modification \& Suppression d'un fournisseur.
+\item[$\bullet$] Suivi et Consultation de l'état du stock.
+\item[$\bullet$] Ajouter une nouveauté.
+\item[$\bullet$] Soler un produit.
+\end{itemize}
+\vspace{.3cm}
+\subsection{Gestion du Paiement en ligne}
+\vspace{.3cm}
+\begin{itemize}
+\item[$\bullet$] Afficher une facture.
+\item[$\bullet$] Choisir le mode de livraison.
+\item[$\bullet$] Choisir le mode de paiement.
+\item[$\bullet$] Effectuer le paiement.
+\end{itemize}
+\vspace{1cm}
+\section{Besoins Non Fonctionnels}
+\vspace{.5cm}
+
+Quand les besoins fonctionnels expriment les fonctionnalités concrètes du produit, les besoins non fonctionnels sont des indicateurs de qualité de l’exécution des besoins fonctionnels. La norme ISO/CEI 25000, relative à la qualité du logiciel, liste un certain nombre de qualités qui peuvent être approchées comme autant de catégories de besoins non fonctionnels :
+\vspace{.3cm}
+\begin{itemize}
+\item[$\bullet$] Maturité \& Tolérance aux fautes.
+\item[$\bullet$] Facilité de compréhension, d’apprentissage et d’exploitation.
+\item[$\bullet$] Comportement vis-à-vis du temps et des ressources.
+\item[$\bullet$] Adaptation à l'utilisateur.
+\item[$\bullet$] Facilité \& Maintenabilité.
+\end{itemize}
+
+
+
+\begin{center}
+\chapter{Analyse \& Conception}
+\end{center}
+
+Nous allons procéder selon la méthode UML qui consiste à recenser et modéliser les différents processus métiers afin de migrer facilement vers une architecture objet d’un point de vue statique et dynamique. Cette analyse présente une abstraction totale étant indépendante de toute technologie ou implémentation.
+\vspace{.3cm}\\
+La spécification des besoins va nous permettre d’avoir une meilleure approche des utilisateurs, des fonctionnalités et de la relation entre les deux. Elle sera sous forme de cas d’utilisation.
+
+\vspace{1cm}
+\section{Identification des acteurs}
+\vspace{.5cm}
+
+Dans UML on n’utilise pas le terme d’utilisateurs mais d’acteurs. Un acteur d’un système est une entité externe à ce système qui interagit (saisie de données, réceptions d’informations,…) avec lui. Les acteurs permettent de cerner l’interface que le système va offrir à son environnement. Un acteur regroupe plusieurs utilisateurs qui ont le même rôle. Et pour trouver un acteur il faudra identifier les différents rôles que vont devoir jouer ses utilisateurs.
+\vspace{.3cm}\\
+Les différents acteurs du système étudié sont: Service commercial, Service administratif et Client.
+
+\vspace{1cm}
+\section{Identification des objectifs \& cas d'utilisation}
+\vspace{.5cm}
+
+Un cas d’utilisation décrit sous la forme d’actions et de réactions, le comportement d’un système d’un point de vue utilisateur. Il doit apporter une valeur ajoutée à l’acteur concerné. Chaque cas d’utilisation contient une liste de fonctionnalités qu’on va détailler dans la partie suivante.
+\vspace{.3cm}\\
+Après avoir listé tous les cas d’utilisations dans le section précédente sous format de besoins fonctionnels et non-fonctionnels, on va maintenant faire une description imagée de chaque cas et le décrire séparément afin d’avoir une idée plus détaillée sur le fonctionnement de chacun d’eux.
+
+\vspace{.5cm}
+\subsection{Identification}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/diagramme-activites-identification-1.jpg}
+    \caption{Diagramme d'activité du cas d'utilisation Identification}
+\end{figure}
+
+\vspace{.5cm}
+\subsection{Gestion des Utilisateurs}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/diagramme-activites-gestion-utilisateurs-1.jpg}
+    \caption{Diagramme d'activité de la Gestion des utilisateurs}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Gestion des Clients}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/diagramme-activites-utilisation-gestion-clients-1.jpg}
+    \caption{Diagramme d'activité de la Gestion des clients}
+\end{figure}
+
+\vspace{.5cm}
+\subsection{Gestion des Catégories}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/diagramme-activites-utilisation-gestion-categories-1.jpg}
+    \caption{Diagramme d'activité de la Gestion des catégories}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Gestion des Marques}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{Figures/diagramme-activitts-utilisation-gestion-marques-1.jpg}
+    \caption{Diagramme d'activité de la Gestion des marques}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Gestion des Produits}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{Figures/diagramme-activites-utilisation-gestion-produits-1.jpg}
+    \caption{Diagramme d'activité de la Gestion des produits}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Suivi du Stock}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/Diagramme-activites-utilisation-gestion-stock-1.jpg}
+    \caption{Diagramme d'activité du Suivi du Stock}
+\end{figure}
+
+\vspace{.5cm}
+\subsection{Marketing}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{Figures/diagramme-activites-utilisation-gestion-marketing-1.jpg}
+    \caption{Diagramme d'activité de la Gestion du Marketing}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Panier}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{Figures/Diagramme-activite-utilisation-Panier-1.jpg}
+    \caption{Diagramme d'activité de la Gestion du Panier}
+\end{figure}
+
+\vspace{.5cm}
+\subsection{Suivi des Commandes}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.6]{Figures/Diagramme-activite-utilisation-gestion-commandes-1.jpg}
+    \caption{Diagramme d'activité du Suivi des Commandes}
+\end{figure}
+
+
+\vspace{.5cm}
+\subsection{Paiement en Ligne}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.8]{Figures/Diagramme-activite-utilisation-Paiement-en-ligne-1.jpg}
+    \caption{Diagramme d'activité du Paiement en ligne}
+\end{figure}
+
+\vspace{1cm}
+\section{Diagramme de Cas d'Utilisation}
+\vspace{.5cm}
+Un diagramme de cas d’utilisation capture le comportement d’un système, d’un sous-système, d’une classe ou d’un composant tel qu’un utilisateur extérieur le voit. Il scinde la fonctionnalité du système en unités cohérentes, les cas d’utilisation, ayant un sens pour les acteurs. Les cas d’utilisation permettent d’exprimer le besoin des utilisateurs d’un système, ils sont donc une vision orientée utilisateur de ce besoin au contraire d’une vision informatique.
+\vspace{.3cm}\\
+On a élaboré le diagramme de cas d'utilisation de notre plate-forme au moyen de PlantUML, lequel est un outil libre et intéropérable qui permet de créer des diagrammes UML à partir d'un langage textuel de description.
+
+\vspace{.4cm}
+
+\lstset{
+  basicstyle=\footnotesize, frame=tb,
+  xleftmargin=.2\textwidth, xrightmargin=.2\textwidth,
+    caption= Code Décrivant le Diagramme de Cas d'Utilisation
+}
+\begin{center}
+\begin{lstlisting}
+@startuml
+
+rectangle "Plate-Forme Cure"{
+    'Creating actors
+    actor Utilisateur
+    actor Client
+    actor Administrateur
+
+    'Creating use cases
+    left to right direction
+    Utilisateur --> (S'authentifier)
+    Utilisateur --> (Creer un compte)
+    Utilisateur --> (Rechercher un produit)
+    Utilisateur --> (Consulter les produits)
+    Client --> (Ajouter un article au panier)
+    Client --> (Commander)
+    Client --> (Modifier son compte) 
+    
+    Administrateur --> (Gerer les clients)
+    Administrateur --> (Gerer les produits)
+    Administrateur --> (Voir la liste des orders)
+    Administrateur --> (Gerer les categories)
+
+    (Ajouter un article au panier).>(S'authentifier):include
+    (Commander).>(S'authentifier):include
+    (Modifier son compte).>(S'authentifier):include
+    (Gerer les produits).>(S'authentifier):include
+    (Gerer les clients).>(S'authentifier):include
+    (Voir la liste des orders).>(S'authentifier):include
+    (Gerer les categories).>(S'authentifier):include
+}
+
+@enduml
+\end{lstlisting}
+\end{center}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=.7]{Figures/UCD.png}
+    \caption{Diagramme de Cas d'Utilisation correspondant}
+\end{figure}
+
+\vspace{1cm}
+\section{Architecture Logicielle}
+\vspace{.5cm}
+
+Dans cette partie du chapitre, nous allons fournir l’architecture générale de notre application, y compris le workflow de l’interaction de l’utilisateur avec l’application, et comment le serveur gère la requête HTTP de l’utilisateur. 
+
+\vspace{.5cm}
+\subsection{MVC}
+\vspace{.5cm}
+
+Modèle-vue-contrôleur ou MVC est un motif d'architecture logicielle destiné aux interfaces graphiques lancé en 1978 et très populaire pour les applications Web. Le motif est composé de trois types de modules ayant trois responsabilités différentes : les modèles, les vues et les contrôleurs.
+\vspace{.3cm}
+\begin{itemize}
+    \item[$\bullet$] Un modèle (Model) : Élément qui contient les données ainsi que de la logique en rapport avec les données : validation, lecture et enregistrement. Il peut, dans sa forme la plus simple, contenir uniquement une simple valeur, ou une structure de données plus complexe. Le modèle représente l'univers dans lequel s'inscrit l'application. Par exemple pour une application de banque, le modèle représente des comptes, des clients, ainsi que les opérations telles que dépôt et retraits, et vérifie que les retraits ne dépassent pas la limite de crédit.
+    
+    \item[$\bullet$] Une vue (View) : Partie visible d'une interface graphique. La vue se sert du modèle, et peut être un diagramme, un formulaire, des boutons, etc. Une vue contient des éléments visuels ainsi que la logique nécessaire pour afficher les données provenant du modèle. Dans une application de bureau classique, la vue obtient les données nécessaires à la présentation du modèle en posant des questions. Elle peut également mettre à jour le modèle en envoyant des messages appropriés. Dans une application web une vue contient des balises HTML.
+    
+    \item[$\bullet$] Un contrôleur (Controller) : Module qui traite les actions de l'utilisateur et modifie les données du modèle et de la vue.
+\end{itemize}
+\vspace{.3cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Figures/S.png}
+    \caption{Représentation des interactions entre le Modèle, la Vue et le Contrôleur}
+\end{figure}
+
+\vspace{.3cm}
+Dans la mise en œuvre classique du patron MVC, la vue attend des modifications du modèle, puis modifie la présentation des éléments visuels correspondants. Cette mise en œuvre est appliquée pour les applications de bureau avec des frameworks. Le protocole HTTP ne permet pas cette mise en œuvre pour les applications Web. Pour ces dernières, lors d'une action de l'utilisateur, le contenu de la vue est recalculé puis envoyé au client. 
+
+\vspace{.5cm}
+\subsection{ORM}
+\vspace{.5cm}
+
+Un mapping objet-relationnel (en anglais object-relational mapping ou ORM) est un type de programme informatique qui se place en interface entre un programme applicatif et une base de données relationnelle pour simuler une base de données orientée objet. Ce programme définit des correspondances entre les schémas de la base de données et les classes du programme applicatif. On pourrait le désigner par là, « comme une couche d’abstraction entre le monde objet et monde relationnel ». Du fait de sa fonction, on retrouve ce type de programme dans un grand nombre de frameworks sous la forme de composant ORM qui a été soit développé, soit intégré depuis une solution externe.
+\vspace{.4cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/d7585-10yxhekcxw8ij5k2wft1oow.png}
+    \caption{Mapping Objet-Relationnel}
+\end{figure}
+
+
+
+\begin{center}
+\chapter{Mise en Oeuvre \& Implantation}
+\end{center}
+
+Après avoir réalisé une conception répondant au mieux aux besoins de notre application, nous commençons la partie implémentation de l’application que nous avons élaborée, en exposant les différents outils de développement et langages utilisés lors de la production de nos application ainsi que les résultats obtenu.
+
+\vspace{1cm}
+\section{Outils \& Technologies Utilisées}
+\vspace{.5cm}
+
+Il s'agit de présenter les différents langages et technologies utilisées pour la réalisation de la spécification susmentionnée.
+
+\vspace{.5cm}
+\subsection{HTML}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.3]{Figures/html.png}
+    \caption{HTML 5.3}
+\end{figure}
+
+
+HTML signifie « HyperText Markup Language » qu'on peut traduire par langage de balises pour l'hypertexte. Il est utilisé afin de créer et de représenter le contenu d'une page web et sa structure. D'autres technologies sont utilisées avec HTML pour décrire la présentation d'une page (CSS) et/ou ses fonctionnalités interactives (JavaScript). L' hypertexte désigne les liens qui relient les pages web entre elles, que ce soit au sein d'un même site web ou entre différents sites web. Les liens sont un aspect fondamental du Web. Ce sont eux qui forment la toile!
+
+\vspace{.5cm}
+\subsection{CSS}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.3]{Figures/css.png}
+    \caption{CSS-3}
+\end{figure}
+
+Les feuilles de style en cascade1, généralement appelées CSS de l'anglais Cascading Style Sheets, forment un langage informatique qui décrit la présentation des documents HTML et XML. L'un des objectifs majeurs des CSS est de permettre la mise en forme hors des documents. Il est par exemple possible de ne décrire que la structure d'un document en HTML, et de décrire toute la présentation dans une feuille de style CSS séparée. Les styles sont appliqués au dernier moment, dans le navigateur web des visiteurs qui consultent le document. Cette séparation fournit un certain nombre de bénéfices, permettant d'améliorer l'accessibilité, de changer plus facilement de présentation, et de réduire la complexité de l'architecture d'un document. 
+
+\vspace{.5cm}
+\subsection{JSP}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.3]{Figures/JSP.png}
+    \caption{Java Server Pages}
+\end{figure}
+
+
+Les JSP (Java Server Pages) sont une technologie Java qui permet la génération de pages web dynamiques. La technologie JSP permet de séparer la présentation sous forme de code HTML et les traitements écrits en Java sous la forme de JavaBeans ou de servlets. Ceci est d'autant plus facile que les JSP définissent une syntaxe particulière permettant d'appeler un bean et d'insérer le résultat de son traitement dans la page HTML dynamiquement.
+
+\vspace{.5cm}
+\subsection{JavaScript}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.3]{Figures/image.png}
+    \caption{JavaScript 13}
+\end{figure}
+
+JavaScript est un langage de programmation de scripts principalement employé dans les pages web interactives et à ce titre est une partie essentielle des applications web. Avec les langages HTML et CSS, JavaScript est au cœur des langages utilisés par les développeurs web. Une grande majorité des sites web l'utilisent, et la majorité des navigateurs web disposent d'un moteur JavaScript pour l'interpréter.
+
+
+\vspace{.5cm}
+\subsection{Java Servlet}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.5]{Figures/JavaServletArchitecture - copie.png}
+    \caption{Architecture des Java Servlets}
+\end{figure}
+
+
+Une servlet est une classe Java qui permet de créer dynamiquement des données au sein d'un serveur HTTP. Ces données sont le plus généralement présentées au format HTML, mais elles peuvent également l'être au format XML ou tout autre format destiné aux navigateurs web. Les servlets utilisent l'API Java Servlet (package {\ttfamily{javax.servlet}}). Les servlets s'exécutent dynamiquement sur le serveur web et permet l'extension des fonctions de ce dernier, par exemple : l'accès à des bases de données, transactions de commerce en ligne, etc. Une servlet peut être chargé automatiquement lors du démarrage du serveur web ou lors de la première requête du client. Une fois chargés, les servlets restent actifs dans l'attente d'autres requêtes du client.
+
+
+\vspace{.5cm}
+\subsection{JDBC}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.25]{Figures/jdbc.png}
+    \caption{Java Database Connectivity}
+\end{figure}
+
+JDBC (Java Database Connectivity) est une interface de programmation créée par Sun Microsystems — depuis racheté par Oracle Corporation — pour les programmes utilisant la plateforme Java. Elle permet aux applications Java d'accéder par le biais d'une interface commune à des sources de données pour lesquelles il existe des pilotes JDBC. Normalement, il s'agit d'une base de données relationnelle, et des pilotes JDBC sont disponibles pour tous les systèmes connus de bases de données relationnelles.
+
+
+\vspace{1cm}
+\section{Réalisation}
+\vspace{.5cm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.45]{Screens/registerSimple.PNG}
+    \caption{Inscription Simple}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.45]{Screens/registerIfpasswordsNotMatch.PNG}
+    \caption{Erreur d'Inscription}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/Login1.PNG}
+    \caption{Authentification}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/LoginIfErrorInPassowrd.PNG}
+    \caption{Erreur d'Authentification}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/ListUsers.PNG}
+    \caption{Liste des Utilisateurs}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/HomeProductsList.PNG}
+    \caption{Liste des Produits}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/ProductPage.PNG}
+    \caption{Page d'un Produit}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/CommandeInfo.PNG}
+    \caption{État de la Commande}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/DahsboardSideBAr.PNG}
+    \caption{Barre Latérale}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/DahsoboardOrderList.PNG}
+    \caption{Liste des Commandes}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/dashboardAddproduct.PNG}
+    \caption{Ajout de Produit}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/DashboardProductList.PNG}
+    \caption{Liste des Produits}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/CategorieList.PNG}
+    \caption{Liste des Catégories}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=.4]{Screens/AddCategorie.PNG}
+    \caption{Ajout de Catégorie}
+\end{figure}
+
+
+
+
+
+
+
+
+\begin{center}
+\chapter*{Conclusion Générale}
+\end{center}
+\addcontentsline{toc}{chapter}{Conclusion}
+
+Le travail réalisé consiste en la réalisation d’une application web de vente pharmaceutique en ligne proposant à sa clientèle une large gamme de produits pharmaceutiques. Notre applicatino doit pour cela être en mesure de répondre autant que possible aux besoins de ses consommateurs. Son site doit pour cela mettre en évidence plusieurs rubriques de classement de médicaments avec leurs propriétés et leur utilisation ainsi qu’un onglet de recherche. Cette dernière option permet à ses clients de retrouver facilement les produits dont ils ont besoin sans devoir défiler plusieurs pages.
+\\ \\
+Pour ce faire, nous avons fait une petite analyse en amont sur les besoins attendus des utilisateurs. On a aussi élaborée l’architecture générale de notre application, y compris le workflow de l’interaction de l’utilisateur avec l’application et le les détails de notre expérience utilisateur :
+\\ \\
+\begin{itemize}
+    \item[$\bullet$] Expérience e-commerce optimisée.
+    \item[$\bullet$] Visuel et Immersion de qualité.
+    \item[$\bullet$] Paiement fluide et efficace.
+    \item[$\bullet$] Moteur de Recherche performant.
+    \item[$\bullet$] Modes de livraison et Moyens de contacts diversifiés.
+\end{itemize}
