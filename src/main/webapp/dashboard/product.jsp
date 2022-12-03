@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -21,42 +20,21 @@
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
-           <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
-                </li>
-                <li>
-                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
-                </li>
+            <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                    <a href="index.jsp"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
                 </li>
                 <li>
-                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                    <a href="order_list.jsp"><i class="material-icons fit">event_note</i>ORDER LIST</a>
                 </li>
                 <li>
-                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
+                    <a href="product.jsp"><i class="material-icons fit">store</i>PRODUCT</a>
                 </li>
                 <li>
-                    <a href="application.html"><i class="material-icons fit">adb</i>APP</a>
+                    <a href="category.jsp"><i class="material-icons fit">dns</i>CATEGORY</a>
                 </li>
                 <li>
-                    <a href="notification.html"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                    <a href="userList.jsp"><i class="material-icons fit">dns</i>Users</a>
                 </li>
             </ul>
         </nav>
@@ -81,7 +59,7 @@
                               </form>
                             </li>
                              <li class="nav-item">
-                               <a href="create_product.html"><button class="btn btn-outline-success">ADD PRODUCT</button></a>
+                               <a href="create_product.jsp"><button class="btn btn-outline-success">ADD PRODUCT</button></a>
                             </li>
                             <li class="nav-item">
                                 <button class="nav-button"><i class="material-icons down">more_vert</i></button>
@@ -92,41 +70,35 @@
             </nav>
 
             <!-- cards view for products  -->
+            
         <div id="card_content">
             <div class="card">
                 <div class="card-body">
                     <table class="table table-hover">
                         <thead>
                             <th scope="col">NO</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Type</th>
-                            <th scope="col">Price</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col">Categorie</th>
+                            <th scope="col">Descript</th>
+                            <th scope="col">Etoiles</th>
                             <th scope="col">Stock</th>
-                            <th scope="col">Status</th>
-                            <th scope="col">Update</th>
-                            <th scope="col">Action</th>
                         </thead>
                         <tbody>
+                        <%@ page import="Ecom.Product" %>
+                        	<%
+                        		for(Product i:Product.getAllProducts()){
+                        	%>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>iPhone 6 - Black</td>
-                                <td>PUBLISHED</td>
-                                <td>10</td>
-                                <td>90</td>
-                                <td>READY STOCK</td>
-                                <td>08 Feb 17</td>
-                              <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
+                                <th scope="row"><%= i.getPid() %></th>
+                                <td><%= i.getNom() %></td>
+                                <td><%= i.getPrix() %></td>
+                                <td><%= i.getCategorieName() %></td>
+                                <td><%= i.getDescript() %></td>
+                                <td><%= i.getEtoiles() %></td>
+                                <td><%= i.getStock() %></td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Sofa Living Room Recliner Nordvalla Medi..</td>
-                                <td>PUBLISHED</td>
-                                <td>10</td>
-                                <td>90</td>
-                                <td>READY STOCK</td>
-                                <td>08 Feb 17</td>
-                                <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
-                            </tr>
+                            <% } %>
                         </tbody>
                     </table>    
                 </div>

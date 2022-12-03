@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -22,40 +21,19 @@
             </div>
             <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
+                    <a href="index.jsp"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
                 </li>
                 <li>
-                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
+                    <a href="order_list.jsp"><i class="material-icons fit">event_note</i>ORDER LIST</a>
                 </li>
                 <li>
-                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                    <a href="product.jsp"><i class="material-icons fit">store</i>PRODUCT</a>
                 </li>
                 <li>
-                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                    <a href="category.jsp"><i class="material-icons fit">dns</i>CATEGORY</a>
                 </li>
                 <li>
-                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
-                </li>
-                <li>
-                    <a href="application.html"><i class="material-icons fit">adb</i>APP</a>
-                </li>
-                <li>
-                    <a href="notification.html"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                    <a href="userList.jsp"><i class="material-icons fit">dns</i>Users</a>
                 </li>
             </ul>
         </nav>
@@ -70,14 +48,6 @@
                     <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-align-justify"></i>
                     </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                           <li class="nav-item">
-                                <button class="nav-button"><i class="material-icons down">more_vert</i></button>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </nav>
 

@@ -57,12 +57,6 @@
                                         <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Search</button>
                               </form>
                             </li>
-                            <li class="nav-item">
-                               <a href="add_categorie.jsp" class="btn btn-outline-success">ADD CATEGORY</a>
-                            </li>
-                            <li class="nav-item">
-                                <button class="nav-button"><i class="material-icons down">more_vert</i></button>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -74,21 +68,26 @@
                 <div class="card-body">
                    <table class="table table-hover">
                         <thead>
-                            <th scope="col">NO</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Action</th>
+                            <th scope="col">uid</th>
+                            <th scope="col">prenom</th>
+                            <th scope="col">nom</th>
+                            <th scope="col">email</th>
+                            <th scope="col">username</th>
                         </thead>
                         <tbody>
-                        	<%@ page import="Ecom.Categorie" %>
+                        	<%@ page import="Ecom.UserList" %>
                         	<%
-                        		for(Categorie i:Categorie.getAllCategories()){
+                        		for(UserList i:UserList.getUsersList()){
                         	%>
                             <tr>
-                                <th scope="row"><%=i.getNo() %></th>
-                                <td><%=i.getName() %></td>
+                                <th scope="row"><%=i.getUid() %></th>
+                                <td><%=i.getPrenom() %></td>
+                                <td><%=i.getNom() %></td>
+                                <td><%=i.getEmail() %></td>
+                                <td><%=i.getUsername() %></td>
                                 <td>
-                                	<form action="/Ecom/DeleteCategorie" method="post">
-                                		<input type="hidden" name="deleteId" value=<%= i.getNo() %>>
+                                	<form action="/Ecom/DeleteUser" method="post">
+                                		<input type="hidden" name="deleteId" value=<%= i.getUid() %>>
                                 		<input class="material-icons down no-border" type="submit" name="delete" value="delete">
                                   </form> 
                                  </td>

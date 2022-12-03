@@ -73,8 +73,9 @@ public class CreateProduct extends HttpServlet {
         }
 		
 		
-		PrintWriter out = response.getWriter(); 
-		out.println(result + " lignes");
+//		PrintWriter out = response.getWriter(); 
+//		out.println(result + " lignes");
+        response.sendRedirect("/Ecom/dashboard/product.jsp"); 
 		
 		
 	}

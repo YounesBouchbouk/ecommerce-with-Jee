@@ -19,42 +19,21 @@
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
-           <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
-                </li>
-                <li>
-                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
-                </li>
+            <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                    <a href="index.jsp"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
                 </li>
                 <li>
-                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                    <a href="order_list.jsp"><i class="material-icons fit">event_note</i>ORDER LIST</a>
                 </li>
                 <li>
-                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
+                    <a href="product.jsp"><i class="material-icons fit">store</i>PRODUCT</a>
                 </li>
                 <li>
-                    <a href="application.html"><i class="material-icons fit">adb</i>APP</a>
+                    <a href="category.jsp"><i class="material-icons fit">dns</i>CATEGORY</a>
                 </li>
                 <li>
-                    <a href="notification.html"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                    <a href="userList.jsp"><i class="material-icons fit">dns</i>Users</a>
                 </li>
             </ul>
         </nav>
@@ -101,11 +80,13 @@
                           <div class="col-3 form-group">
                             <label></label>
                               <select class="custom-select" name="categorie">
-                                <option selected>Product Categorie...</option>
-                                <option value="1">Watches</option>
-                                <option value="2">Laptop</option>
-                                <option value="3">Smartphone</option>
-                                <option value="4">Headphone</option>
+                              	<option selected>Product Categorie...</option>
+                              	<%@ page import="Ecom.Categorie" %>
+	                        	<%
+	                        		for(Categorie i:Categorie.getAllCategories()){
+	                        	%>
+                                <option value=<%= i.getNo() %>><%= i.getName() %></option>
+                                <% } %>
                               </select>
                           </div>
                         </div>
@@ -115,7 +96,7 @@
                             <input type="text" class="form-control" name="nbEtoile" placeholder="nb Etoile *">
                           	</div>
                             <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="decript" placeholder="Description *">
+                            <input type="text" class="form-control" name="descript" placeholder="Description *">
                           </div>
                 		</div>
                 		<div class="row">

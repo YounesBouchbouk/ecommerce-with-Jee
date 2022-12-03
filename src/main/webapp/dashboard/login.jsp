@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -18,10 +17,10 @@
 			<p>Welocme back again! Please login to your account</p>
 			</div>
 			<div class="center-form">
-				<form>
+				<form method="post" action="/Ecom/AdminLogin">
 					<div class="form-group">
 					<label>UserName</label>
-					<input type="text" name="user_name" class="form-control">
+					<input type="text" name="adminId" class="form-control">
 					</div>
 					<div class="form-group">
 					<label>Password</label>

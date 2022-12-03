@@ -1,3 +1,4 @@
+<%= session.getAttribute("adminId") %>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -8,14 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	<title>Order List Page</title>
+	<title>Create Product Page</title>
 </head>
 <body>
 
 
 
 <div class="wrapper">
-        <nav id="sidebar">
+       <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
@@ -37,6 +38,7 @@
                 </li>
             </ul>
         </nav>
+
 	     <div id="content">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -61,86 +63,27 @@
         <div class="card">
             <div class="card-body">
                     <div class="container">
-                      <form>
+                      <form action="/Ecom/AddCategorie" method="post">
                         <div class="row">
-                          <div class="col-6 form-group">
-                            <input type="text" class="form-control" name="buyer_name" placeholder="Buyer Name *">
+                          <div class="col-12 form-group">
+                            <input type="text" class="form-control" name="categorie_id" placeholder="Categorie ID *">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Phone *">
-                          </div>
-                          <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="email" placeholder="Email *">
+                          <div class="col-12 form-group">
+                            <input type="text" class="form-control" name="categorie_name" placeholder="Categorie Name *">
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <input type="text" class="form-control" name="address" placeholder="Address *">
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3">
-                            <label></label>
-                              <select class="custom-select">
-                                <option selected>Shipping...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                          </div>
-                          <div class="col-3">
-                            <label></label>
-                              <input class="form-control" type="date" name="date"/>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-3 form-group">
-                            <label></label>
-                              <select class="custom-select">
-                                <option selected>Order Status...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
-                          </div>
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <input type="text" name="comment" class="form-control" placeholder="Comment">
-                          </div>
-                        </div>
-                      </form>
-
-                      <div class="row">
-                        <div class="col-12">
-                        <h5>List Product Order :</h5>
-                        <table class="table table-hover">
-                        <thead>
-                            <th scope="col">NO</th>
-                            <th scope="col">Product</th>
-                            <th scope="col">Price Item</th>
-                            <th scope="col">Amount</th>
-                            <th scope="col">Price Total</th>
-                            <th scope="col">Action</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row"></th>
-                                <td>Ahmed Kamal Madani</td>
-                                <td>SG93166MF</td>
-                                <td>28 Jan 19</td>
-                                <td>28 Jan 19</td>
-                               <td><button class="no-border"><i class="material-icons down">more_vert</i></button></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                      </div>
-                  </div>
+                		<div class="row">
+                			<input type="submit" value="Add" class="btn mx-2 btn-primary">
+                		</div>
+            </div>  
+            
+        </form>
             </div>
         </div>
       </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
