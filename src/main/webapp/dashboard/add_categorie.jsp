@@ -16,7 +16,7 @@
 
 
 <div class="wrapper">
-        <nav id="sidebar">
+       <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
@@ -63,50 +63,20 @@
         <div class="card">
             <div class="card-body">
                     <div class="container">
-                      <form action="/Ecom/CreateProduct" method="post" enctype="multipart/form-data">
+                      <form action="/Ecom/AddCategorie" method="post">
                         <div class="row">
                           <div class="col-12 form-group">
-                            <input type="text" class="form-control" name="product_name" placeholder="Product Name *">
+                            <input type="text" class="form-control" name="categorie_id" placeholder="Categorie ID *">
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="price" placeholder="Price *">
-                          </div>
-                          <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="stock" placeholder="Stock *">
+                          <div class="col-12 form-group">
+                            <input type="text" class="form-control" name="categorie_name" placeholder="Categorie Name *">
                           </div>
                         </div>
-                        <div class="row">
-                          <div class="col-3 form-group">
-                            <label></label>
-                              <select class="custom-select" name="categorie">
-                              	<option selected>Product Categorie...</option>
-                              	<%@ page import="Ecom.Categorie" %>
-	                        	<%
-	                        		for(Categorie i:Categorie.getAllCategories()){
-	                        	%>
-                                <option value=<%= i.getNo() %>><%= i.getName() %></option>
-                                <% } %>
-                              </select>
-                          </div>
-                        </div>
-                           <div class="row mx-1">
-                             <label>Rate Please<sup class="text-danger">* </sup></label>
-                            <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="nbEtoile" placeholder="nb Etoile *">
-                          	</div>
-                            <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="descript" placeholder="Description *">
-                          </div>
-                		</div>
-                		<div class="row my-3 mx-1">
-                			<input type="file" name="file" />
-                		</div>
-                		<div class="row mx-1">
+                		<div class="row">
                 			<input type="submit" value="Add" class="btn mx-2 btn-primary">
                 		</div>
-                		
             </div>  
             
         </form>

@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html>
+<% if(session.getAttribute("adminId").equals(new Integer(1))){ %>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -20,46 +20,24 @@
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
-           <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
-                </li>
+            <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
+                    <a href="index.jsp"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
                 </li>
                 <li>
-                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                    <a href="order_list.jsp"><i class="material-icons fit">event_note</i>ORDER LIST</a>
                 </li>
                 <li>
-                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                    <a href="product.jsp"><i class="material-icons fit">store</i>PRODUCT</a>
                 </li>
                 <li>
-                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
+                    <a href="category.jsp"><i class="material-icons fit">dns</i>CATEGORY</a>
                 </li>
                 <li>
-                    <a href="application.html"><i class="material-icons fit">adb</i>APP</a>
-                </li>
-                <li>
-                    <a href="notification.html"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                    <a href="userList.jsp"><i class="material-icons fit">dns</i>Users</a>
                 </li>
             </ul>
         </nav>
-
 	     <div id="content">
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -178,4 +156,5 @@
 		});
 	});
 </script>
+<% } %>
 </html>
