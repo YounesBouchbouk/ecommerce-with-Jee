@@ -9,10 +9,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
-/**
- *
- * @author SAMSUNG
- */
+
 @Entity
 @Table(name = "login", catalog = "ecom", schema = "")
 
