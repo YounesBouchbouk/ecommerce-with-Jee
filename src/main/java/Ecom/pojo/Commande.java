@@ -1,5 +1,6 @@
 package Ecom.pojo;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -8,10 +9,12 @@ public class Commande {
 	private String address;
 	private String ville ;
 	private String recipiendaire;
-	private Date Data_commande;
-	private Date Date_arrive;
+	private String Data_commande;
+	private String Date_arrive;
 	private int Total;
 	Date curDate = new Date();
+	String pattern = "yyyy-MM-dd";
+	SimpleDateFormat formatter = new SimpleDateFormat(pattern);
 		
 	
 	// Add days to a date in Java
@@ -28,8 +31,8 @@ public class Commande {
 		this.address = address;
 		this.ville = ville;
 		this.recipiendaire = recipiendaire;
-		Data_commande = curDate;
-		Date_arrive = this.addDays(curDate, 2);
+		Data_commande = formatter.format(curDate);;
+		Date_arrive = formatter.format(this.addDays(curDate, 2));
 		this.Total = total;
 	}
 	
@@ -65,22 +68,22 @@ public class Commande {
 	}
 
 
-	public Date getData_commande() {
+	public String getData_commande() {
 		return Data_commande;
 	}
 
 
-	public void setData_commande(Date data_commande) {
+	public void setData_commande(String data_commande) {
 		Data_commande = data_commande;
 	}
 
 
-	public Date getDate_arrive() {
+	public String getDate_arrive() {
 		return Date_arrive;
 	}
 
 
-	public void setDate_arrive(Date date_arrive) {
+	public void setDate_arrive(String date_arrive) {
 		Date_arrive = date_arrive;
 	}
 

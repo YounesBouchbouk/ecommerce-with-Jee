@@ -136,19 +136,58 @@
                         <h2>Login</h2>
                     </div>
                 </div>
+                
+                
+                 <% 
+  
+  if(request.getAttribute("error") != null){
+	  
+	  
+ 	  
+%>
+                
+                <div class="alert alert-danger" role="alert">
+  					${error} 
+					</div>
+					
+					<% 
+  
+  }
+	  
+	  
+ 	  
+%>
+
+
+    <% 
+  
+  if(request.getAttribute("succsign") != null){
+	  
+	  
+ 	  
+%>
+                
+                <div class="alert alert-success" role="alert">
+  					${succsign} 
+					</div>
+					
+					<% 
+  
+  }  
+%>
 
                 <main class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8 mx-auto bg-white py-3 mb-4">
                         <div class="row">
                             <div class="col-12">
-                                <form>
+                                <form action="/Ecom/authentication" method="post">
                                     <div class="mb-3">
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" id="email" class="form-control" required>
+                                        <input type="email" name="email" id="email" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <label for="password" class="form-label">Password</label>
-                                        <input type="password" id="password" class="form-control" required>
+                                        <input type="password" name="password" id="password" class="form-control" required>
                                     </div>
                                     <div class="mb-3">
                                         <div class="form-check">

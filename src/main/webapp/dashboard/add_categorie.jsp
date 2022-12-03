@@ -9,15 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-	<title>Order List Page</title>
+	<title>Create Product Page</title>
 </head>
 <body>
 
 
 
 <div class="wrapper">
-        <nav id="sidebar">
+       <nav id="sidebar">
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
@@ -41,7 +40,7 @@
         </nav>
 
 	     <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
 
                     <button type="button" id="sidebarCollapse" class="btn btn-info">
@@ -54,56 +53,42 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="nav navbar-nav ml-auto">
                             <li class="nav-item">
-                               <form class="form-inline">
-                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Search</button>
-                              </form>
-                            </li>
-                            
-                            <li class="nav-item">
                                 <button class="nav-button"><i class="material-icons down">more_vert</i></button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
+    <div id="card_content">     
+        <div class="card">
+            <div class="card-body">
+                    <div class="container">
+                      <form action="/Ecom/AddCategorie" method="post">
+                        <div class="row">
+                          <div class="col-12 form-group">
+                            <input type="text" class="form-control" name="categorie_id" placeholder="Categorie ID *">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 form-group">
+                            <input type="text" class="form-control" name="categorie_name" placeholder="Categorie Name *">
+                          </div>
+                        </div>
+                		<div class="row">
+                			<input type="submit" value="Add" class="btn mx-2 btn-primary">
+                		</div>
+            </div>  
             
-            <!-- cards view for oder list to view order from customers -->
-            <div id="card_content">
-            <div class="card">
-                <div class="card-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <th scope="col">commande id</th>
-                            <th scope="col">user name</th>
-                            <th scope="col">Nom du produit</th>
-                            <th scope="col">Date commande</th>
-                            <th scope="col">Date envoi</th>
-                           
-                        </thead>
-                        <tbody>
-                        	<%@ page import="Ecom.OrderList" %>
-                        	<%
-                        		for(OrderList i:OrderList.getAllOrders()){
-                        	%>
-                            <tr>
-                                <th scope="row"><%= i.getCid() %></th>
-                                <td><%= i.getUserName() %></td>
-                                <td><%= i.getProductName() %></td>
-                                <td><%= i.getDateCommande() %></td>
-                                <td><%= i.getDateLivraison() %></td>
-                                
-                               
-                            </tr>
-                            <% } %>
-                        </tbody>
-                    </table>
-                </div>
+        </form>
             </div>
+        </div>
+      </div>
+    </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" >
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script type="text/javascript" >
 	$(document).ready(function (){

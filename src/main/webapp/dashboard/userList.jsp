@@ -1,16 +1,15 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-
+      
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
-	<title>Order List Page</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>    
+	<title>Category Page</title>
 </head>
 <body>
 
@@ -56,46 +55,45 @@
                             <li class="nav-item">
                                <form class="form-inline">
                                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                    <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Search</button>
+                                        <button class="btn btn-outline-success my-2 my-sm-0 mr-sm-2" type="submit">Search</button>
                               </form>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <button class="nav-button"><i class="material-icons down">more_vert</i></button>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </nav>
+            </nav>  
             
-            <!-- cards view for oder list to view order from customers -->
+            <!-- cards view for products  -->
             <div id="card_content">
             <div class="card">
                 <div class="card-body">
-                    <table class="table table-hover">
+                   <table class="table table-hover">
                         <thead>
-                            <th scope="col">commande id</th>
-                            <th scope="col">user name</th>
-                            <th scope="col">Nom du produit</th>
-                            <th scope="col">Date commande</th>
-                            <th scope="col">Date envoi</th>
-                           
+                            <th scope="col">uid</th>
+                            <th scope="col">prenom</th>
+                            <th scope="col">nom</th>
+                            <th scope="col">email</th>
+                            <th scope="col">username</th>
                         </thead>
                         <tbody>
-                        	<%@ page import="Ecom.OrderList" %>
+                        	<%@ page import="Ecom.UserList" %>
                         	<%
-                        		for(OrderList i:OrderList.getAllOrders()){
+                        		for(UserList i:UserList.getUsersList()){
                         	%>
                             <tr>
-                                <th scope="row"><%= i.getCid() %></th>
-                                <td><%= i.getUserName() %></td>
-                                <td><%= i.getProductName() %></td>
-                                <td><%= i.getDateCommande() %></td>
-                                <td><%= i.getDateLivraison() %></td>
-                                
-                               
+                                <th scope="row"><%=i.getUid() %></th>
+                                <td><%=i.getPrenom() %></td>
+                                <td><%=i.getNom() %></td>
+                                <td><%=i.getEmail() %></td>
+                                <td><%=i.getUsername() %></td>
+                                <td>
+                                	<form action="/Ecom/DeleteUser" method="post">
+                                		<input type="hidden" name="deleteId" value=<%= i.getUid() %>>
+                                		<input class="material-icons down no-border" type="submit" name="delete" value="delete">
+                                  </form> 
+                                 </td>
                             </tr>
-                            <% } %>
+                            <%} %>
                         </tbody>
                     </table>
                 </div>
@@ -106,12 +104,12 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script type="text/javascript" >
-	$(document).ready(function (){
-		$('#sidebarCollapse').on('click', function(){
-			$('#sidebar').toggleClass('active');
-			$(this).toggleClass('active');
-		});
-	});
+    $(document).ready(function (){
+        $('#sidebarCollapse').on('click', function(){
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
 </script>
 
 </html>

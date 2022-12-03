@@ -1,5 +1,5 @@
-<!DOCTYPE html>
 <html>
+
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -20,42 +20,21 @@
             <div class="sidebar-header">
                 <h3>Ecommerce Dashboard</h3>
             </div>
-           <ul class="list-unstyled components">
-                <li>
-                    <a href="index.html"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
-                </li>
-                <li>
-                    <a href="order_list.html"><i class="material-icons fit">event_note</i>ORDER LIST</a>
-                </li>
+            <ul class="list-unstyled components">
                 <li class="active">
-                    <a href="product.html"><i class="material-icons fit">store</i>PRODUCT</a>
+                    <a href="index.jsp"><i class="material-icons fit">dashboard</i>DASHBOARD</a>
                 </li>
                 <li>
-                    <a href="category.html"><i class="material-icons fit">dns</i>CATEGORY</a>
+                    <a href="order_list.jsp"><i class="material-icons fit">event_note</i>ORDER LIST</a>
                 </li>
                 <li>
-                    <a href="news.html"><i class="material-icons fit">subject</i>NEWS INFO</a>
+                    <a href="product.jsp"><i class="material-icons fit">store</i>PRODUCT</a>
                 </li>
                 <li>
-                    <a href="application.html"><i class="material-icons fit">adb</i>APP</a>
+                    <a href="category.jsp"><i class="material-icons fit">dns</i>CATEGORY</a>
                 </li>
                 <li>
-                    <a href="notification.html"><i class="material-icons fit">notifications</i>NOTIFICATION</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">settings</i>SETTING</a>
-                </li>
-                <li>
-                    <a href="#"><i class="material-icons fit">error</i>ABOUT </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Link to Website</a>
+                    <a href="userList.jsp"><i class="material-icons fit">dns</i>Users</a>
                 </li>
             </ul>
         </nav>
@@ -84,41 +63,52 @@
         <div class="card">
             <div class="card-body">
                     <div class="container">
-                      <form>
+                      <form action="/Ecom/CreateProduct" method="post" enctype="multipart/form-data">
                         <div class="row">
                           <div class="col-12 form-group">
-                            <input type="text" class="form-control" name="buyer_name" placeholder="Product Name *">
+                            <input type="text" class="form-control" name="product_name" placeholder="Product Name *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
+                            <input type="text" class="form-control" name="price" placeholder="Price *">
                           </div>
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="email" placeholder="Stock *">
+                            <input type="text" class="form-control" name="stock" placeholder="Stock *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
                             <label></label>
-                              <select class="custom-select">
-                                <option selected>Product Status...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                              <select class="custom-select" name="categorie">
+                              	<option selected>Product Categorie...</option>
+                              	<%@ page import="Ecom.Categorie" %>
+	                        	<%
+	                        		for(Categorie i:Categorie.getAllCategories()){
+	                        	%>
+                                <option value=<%= i.getNo() %>><%= i.getName() %></option>
+                                <% } %>
                               </select>
                           </div>
                         </div>
-                           <div class="row">
+                           <div class="row mx-1">
                              <label>Rate Please<sup class="text-danger">* </sup></label>
                             <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
-                          </div>
+                            <input type="text" class="form-control" name="nbEtoile" placeholder="nb Etoile *">
+                          	</div>
                             <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
+                            <input type="text" class="form-control" name="descript" placeholder="Description *">
                           </div>
-                </div>
+                		</div>
+                		<div class="row my-3 mx-1">
+                			<input type="file" name="file" />
+                		</div>
+                		<div class="row mx-1">
+                			<input type="submit" value="Add" class="btn mx-2 btn-primary">
+                		</div>
+                		
             </div>  
+            
         </form>
             </div>
         </div>
@@ -138,4 +128,5 @@
 		});
 	});
 </script>
+
 </html>

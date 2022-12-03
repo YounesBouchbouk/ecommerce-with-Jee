@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>E-Commerce Template</title>
+    <title>Succe</title>
 
     <link href="//fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet">
@@ -47,38 +47,7 @@
                     </div>
                     <!-- Top Nav -->
 
-                    <!-- Header -->
-                    <div class="col-12 bg-white pt-4">
-                        <div class="row">
-                            <div class="col-lg-auto">
-                                <div class="site-logo text-center text-lg-left">
-                                    <a href="index.html">E-Commerce</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-5 mx-auto mt-4 mt-lg-0">
-                                <form action="#">
-                                    <div class="form-group">
-                                        <div class="input-group">
-                                            <input type="search" class="form-control border-dark" placeholder="Search..." required>
-                                            <button class="btn btn-outline-dark"><i class="fas fa-search"></i></button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="col-lg-auto text-center text-lg-left header-item-holder">
-                                <a href="#" class="header-item">
-                                    <i class="fas fa-heart me-2"></i><span id="header-favorite">0</span>
-                                </a>
-                                <a href="cart.html" class="header-item">
-                                    <i class="fas fa-shopping-bag me-2"></i><span id="header-qty" class="me-3">2</span>
-                                    <i class="fas fa-money-bill-wave me-2"></i><span id="header-price">$4,000</span>
-                                </a>
-                            </div>
-                        </div>
-
-                
-                    </div>
-                    <!-- Header -->
+                  
 
                 </header>
             </div>
@@ -86,60 +55,16 @@
             <div class="col-12">
                 <!-- Main Content -->
                 <div class="row">
-                    <div class="col-12 mt-3 text-center text-uppercase">
-                        <h2>Commande informations :</h2>
-                    </div>
+                    
                 </div>
                 
+          
                
-                	
 
                 <main class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-8 mx-auto bg-white py-3 mb-4">
-                        <div class="row">
-                            <div class="col-12">
-                                <form action="/Ecom/order" method="post">
-                                 <div class="mb-3">
-                                        <label for="name" class="form-label"><%= request.getParameter("productname") %></label>
-                                        
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Ville :</label>
-                                        <input type="text" id="ville" name="ville" class="form-control" required>
-                                    </div>
-                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Address :</label>
-                                        <input type="text" id="address" name="address" class="form-control" required>
-                                    </div>
-                                    
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Nome Recipiendaire :</label>
-                                        <input type="email" id="recipiendaire" name="recipiendaire" class="form-control" required>
-                                        <input type="number"  name="amount" value=<%= request.getParameter("price") %>  class="form-control d-none" required>
-                                        <input type="number"  name="id" value=<%= request.getParameter("id") %>  class="form-control d-none" required>
-                                        
-                                    </div>
-                                    
-                                  
-                                    <div class="mb-3">
-                                        <div class="form-check">
-                                            <input type="checkbox" id="agree" class="form-check-input" required>
-                                            <label for="agree" class="form-check-label ml-2">I agree to Terms and Conditions</label>
-                                        </div>
-                                    </div>
-                                    
-                                      <div class="mb-3">
-                                        <label for="email" class="form-label">amount : <%= request.getParameter("price") %> $</label>
-                                        <p  >${error}<p/>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-outline-dark">Order</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                     <div class="alert alert-success" role="alert">
+  					<p>Votre Order est bien effectué <p/>
+					</div>
                     </div>
 
                 </main>
@@ -155,7 +80,7 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="footer-logo">
-                                            <a href="index.html">E-Commerce</a>
+                                            <a href="index.html">Cure</a>
                                         </div>
                                     </div>
                                     <div class="col-12">
@@ -258,7 +183,6 @@
                 <!-- Footer -->
             </div>
 
-        </div>
     </div>
 
     <script type="text/javascript" src="js/jquery.min.js"></script>

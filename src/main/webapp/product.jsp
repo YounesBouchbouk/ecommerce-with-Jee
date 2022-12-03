@@ -53,7 +53,7 @@
                         <div class="row">
                             <div class="col-lg-auto">
                                 <div class="site-logo text-center text-lg-left">
-                                    <a href="index.html">E-Commerce</a>
+                                    <a href="index.html">Cure</a>
                                 </div>
                             </div>
                             <div class="col-lg-5 mx-auto mt-4 mt-lg-0">
@@ -77,52 +77,7 @@
                             </div>
                         </div>
 
-                        <!-- Nav -->
-                        <div class="row">
-                            <nav class="navbar navbar-expand-lg navbar-light bg-white col-12">
-                                <button class="navbar-toggler d-lg-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="mainNav">
-                                    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="electronics" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Electronics</a>
-                                            <div class="dropdown-menu" aria-labelledby="electronics">
-                                                <a class="dropdown-item" href="category.html">Computers</a>
-                                                <a class="dropdown-item" href="category.html">Mobile Phones</a>
-                                                <a class="dropdown-item" href="category.html">Television Sets</a>
-                                                <a class="dropdown-item" href="category.html">DSLR Cameras</a>
-                                                <a class="dropdown-item" href="category.html">Projectors</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="fashion" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fashion</a>
-                                            <div class="dropdown-menu" aria-labelledby="fashion">
-                                                <a class="dropdown-item" href="category.html">Men's</a>
-                                                <a class="dropdown-item" href="category.html">Women's</a>
-                                                <a class="dropdown-item" href="category.html">Children's</a>
-                                                <a class="dropdown-item" href="category.html">Accessories</a>
-                                                <a class="dropdown-item" href="category.html">Footwear</a>
-                                            </div>
-                                        </li>
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" href="#" id="books" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books</a>
-                                            <div class="dropdown-menu" aria-labelledby="books">
-                                                <a class="dropdown-item" href="category.html">Adventure</a>
-                                                <a class="dropdown-item" href="category.html">Horror</a>
-                                                <a class="dropdown-item" href="category.html">Romantic</a>
-                                                <a class="dropdown-item" href="category.html">Children's</a>
-                                                <a class="dropdown-item" href="category.html">Non-Fiction</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </div>
-                        <!-- Nav -->
+                       
 
                     </div>
                     <!-- Header -->
@@ -146,15 +101,7 @@
                                         <div class="col-sm-2 col-3">
                                             <div class="img-small border" style="background-image: url('images/image-1.jpg')" data-src="images/image-1.jpg"></div>
                                         </div>
-                                        <div class="col-sm-2 col-3">
-                                            <div class="img-small border" style="background-image: url('images/image-2.jpg')" data-src="images/image-2.jpg"></div>
-                                        </div>
-                                        <div class="col-sm-2 col-3">
-                                            <div class="img-small border" style="background-image: url('images/image-3.jpg')" data-src="images/image-3.jpg"></div>
-                                        </div>
-                                        <div class="col-sm-2 col-3">
-                                            <div class="img-small border" style="background-image: url('images/image-4.jpg')" data-src="images/image-4.jpg"></div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -163,19 +110,14 @@
                             <!-- Product Info -->
                             <div class="col-lg-5 col-md-9">
                                 <div class="col-12 product-name large">
-                                    Area 51M Gaming Laptop Welcome to A New ERA with 9TH GEN Intel CORE I9-9900K NVIDIA GEFORCE RTX 2080 8GB GDDR6 17.3" FHD 144HZ AG G-SYNC TOBII EYETRACKING (1TB SSD RAID|32GB RAM|10 PRO)
-                                    <small>By <a href="#">Dell</a></small>
+Enveloppes rinomicine 10 enveloppes                                    
                                 </div>
                                 <div class="col-12 px-0">
                                     <hr>
                                 </div>
                                 <div class="col-12">
                                     <ul>
-                                        <li>Processor 8th Generation Intel Core i9-8950HK (6-Core, 12MB Cache, Overclocking up to 5.0GHz)</li>
-                                        <li>Memory 32GB DDR4-2666MHz, 2x16GB Ram Speed Gaming Performance</li>
-                                        <li>Hard Drive 1TB SSD RAID 0 (2x 512GB PCIe NVME M.2 SSDs) + 1TB (+8GB SSHD) Hybrid Drive</li>
-                                        <li>17.3" Full HD display 1920 x 1080 resolution boasts impressive color and clarity. IPS technology for wide viewing angles.</li>
-                                        <li>Video Card NVIDIAÂ® GeForceÂ® RTX 2080 with 8GB GDDR6</li>
+                                        <li>Il soulage les symptômes de la grippe, catarral, refroidissement et les états de rhume qui se produisent avec la douleur voit ou modère, maux de tête, fièvre et congestion nasale.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -187,10 +129,10 @@
                                     <div class="row">
                                         <div class="col-12">
                                         <span class="detail-price">
-                                            $2,500
+                                            20 DH
                                         </span>
                                             <span class="detail-price-old">
-                                            $2,800
+                                            15 DH
                                         </span>
                                         </div>
                                         <div class="col-xl-5 col-md-9 col-sm-3 col-5 mx-auto mt-3">
@@ -200,7 +142,7 @@
                                             </div>
                                         </div>
                                         <div class="col-12 mt-3">
-                                            <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
+                                            <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Shop Now</button>
                                         </div>
                                         <div class="col-12 mt-3">
                                             <button class="btn btn-outline-secondary btn-sm" type="button"><i class="fas fa-heart me-2"></i>Add to wishlist</button>
@@ -454,130 +396,7 @@
                         </div>
                     </div>
 
-                    <!-- Similar Product -->
-                    <div class="col-12">
-                        <div class="row">
-                            <div class="col-12 py-3">
-                                <div class="row">
-                                    <div class="col-12 text-center text-uppercase">
-                                        <h2>Similar Products</h2>
-                                    </div>
-                                </div>
-                                <div class="row">
-
-                                    <!-- Product -->
-                                    <div class="col-lg-3 col-sm-6 my-3">
-                                        <div class="col-12 bg-white text-center h-100 product-item">
-                                            <div class="row h-100">
-                                                <div class="col-12 p-0 mb-3">
-                                                    <a href="product.html">
-                                                        <img src="images/image-1.jpg" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <a href="product.html" class="product-name">Sony Alpha DSLR Camera</a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <span class="product-price-old">
-                                                        $500
-                                                    </span>
-                                                    <br>
-                                                    <span class="product-price">
-                                                        $500
-                                                    </span>
-                                                </div>
-                                                <div class="col-12 mb-3 align-self-end">
-                                                    <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product -->
-
-                                    <!-- Product -->
-                                    <div class="col-lg-3 col-sm-6 my-3">
-                                        <div class="col-12 bg-white text-center h-100 product-item">
-                                            <div class="row h-100">
-                                                <div class="col-12 p-0 mb-3">
-                                                    <a href="product.html">
-                                                        <img src="images/image-2.jpg" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <a href="product.html" class="product-name">Optoma 4K HDR Projector</a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <span class="product-price">
-                                                        $1,500
-                                                    </span>
-                                                </div>
-                                                <div class="col-12 mb-3 align-self-end">
-                                                    <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product -->
-
-                                    <!-- Product -->
-                                    <div class="col-lg-3 col-sm-6 my-3">
-                                        <div class="col-12 bg-white text-center h-100 product-item">
-                                            <div class="row h-100">
-                                                <div class="col-12 p-0 mb-3">
-                                                    <a href="product.html">
-                                                        <img src="images/image-3.jpg" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <a href="product.html" class="product-name">HP Envy Specter 360</a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <div class="product-price-old">
-                                                        $2,800
-                                                    </div>
-                                                    <span class="product-price">
-                                                        $2,500
-                                                    </span>
-                                                </div>
-                                                <div class="col-12 mb-3 align-self-end">
-                                                    <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product -->
-
-                                    <!-- Product -->
-                                    <div class="col-lg-3 col-sm-6 my-3">
-                                        <div class="col-12 bg-white text-center h-100 product-item">
-                                            <div class="row h-100">
-                                                <div class="col-12 p-0 mb-3">
-                                                    <a href="product.html">
-                                                        <img src="images/image-4.jpg" class="img-fluid">
-                                                    </a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <a href="product.html" class="product-name">Dell Alienware Area 51</a>
-                                                </div>
-                                                <div class="col-12 mb-3">
-                                                    <span class="product-price">
-                                                        $4,500
-                                                    </span>
-                                                </div>
-                                                <div class="col-12 mb-3 align-self-end">
-                                                    <button class="btn btn-outline-dark" type="button"><i class="fas fa-cart-plus me-2"></i>Add to cart</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Product -->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Similar Products -->
-
+                 
                 </main>
                 <!-- Main Content -->
             </div>
