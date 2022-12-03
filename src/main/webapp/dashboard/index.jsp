@@ -53,84 +53,10 @@
             </nav>
 
             <!-- cards view for dashboard to explain main info  -->
-        <div id="card_content">
-            <div class="card">
-            	<div class="card-body">
-            		<h4>Product Order</h4>
-            		<div class="line-title"></div>
-            		  <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <h6>Waiting  : 0 </h6>
-                                <h6>Processed  : 0 </h6>
-                                <h6>Total Order : 0 </h6>
-                            </div>
-                            <div class="col"></div>
-                            <div class="w-100"></div>
-                            <br>
-                            <div class="col">
-                                <h4>Product Information</h4>
-                           <div class="line-title"></div>
-                                 <h6>Published  : 0 </h6>
-                                 <h6>Draft  : 0 </h6>
-
-                                  <div class="line-title"></div>
-                                 <h6>Ready Stock  : 0 </h6>
-                                 <h6>Out of Stock  : 0 </h6>
-                                 <h6>Suspend  : 0 </h6>
-                        </div>
-                            <div class="col">
-                            <h4>Category Information</h4>
-                           <div class="line-title"></div>
-                                 <h6>Published  : 0 </h6>
-                                 <h6>Draft  : 0 </h6>
-                        </div>
-                        </div>
-                        </div>
-            	</div>
-            </div>
-
-            <div class="line"></div>
-
-            <div class="card">
-                <div class="card-body">
-                      <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                 <h4>News Info</h4>
-                    <div class="line-title"></div>
-                                <h6>Featured  : 0 </h6>
-                                <h6>Published  : 0 </h6>
-                                <h6>Draft : 0 </h6>
-                            </div>
-
-                            <div class="col">
-                                  <div class="col">
-                                 <h4>App Version</h4>
-                    <div class="line-title"></div>
-                                <h6>Active  : 0 </h6>
-                                <h6>Inactive  : 0 </h6>
-                            </div>
-                            </div>
-
-                            <div class="w-100"></div>
-                            <br>
-                            <div class="col">
-                                <h4>Application Setting</h4>
-                           <div class="line-title"></div>
-                                 <h6>Currency  : USD </h6>
-                                 <h6>Tax  : 11 % </h6>
-                        </div>
-                            <div class="col">
-                            <h4>Notification</h4>
-                           <div class="line-title"></div>
-                                 <h6>Users  : 0 </h6>
-                        </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
+            <img alt="photo" src="images/ecommerce.jpg" height=100% width=100%>
         </div>
+            
+        
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>

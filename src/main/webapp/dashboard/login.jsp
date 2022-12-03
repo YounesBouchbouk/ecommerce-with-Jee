@@ -13,8 +13,8 @@
 		<div class="col-6">
 			<!-- adding welcoming screen -->
 			<div class="welcome_center">
-			<h2>Weloceme to Dashboard</h2>
-			<p>Welocme back again! Please login to your account</p>
+			<h2>Welcome to Dashboard</h2>
+			<p>Welcome back again! Please login to your account</p>
 			</div>
 			<div class="center-form">
 				<form method="post" action="/Ecom/AdminLogin">

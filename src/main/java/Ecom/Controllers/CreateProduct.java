@@ -7,6 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -20,6 +21,11 @@ import com.mysql.jdbc.Connection;
  * Servlet implementation class CreateProduct
  */
 @WebServlet("/CreateProduct")
+@MultipartConfig(
+  fileSizeThreshold = 1024 * 1024 * 1, // 1 MB
+  maxFileSize = 1024 * 1024 * 10,      // 10 MB
+  maxRequestSize = 1024 * 1024 * 100   // 100 MB
+)
 public class CreateProduct extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -61,7 +67,15 @@ public class CreateProduct extends HttpServlet {
             pst.setInt(3, categorie);
             pst.setString(4, descript);
             pst.setInt(5,nbEtoile );
-            pst.setString(6,"test");
+            
+            /* Receive file uploaded to the Servlet from the HTML5 form */
+            Part filePart = request.getPart("file");
+            String fileName = filePart.getSubmittedFileName();
+            for (Part part : request.getParts()) {
+              part.write("C:\\Users\\Lenovo\\Desktop\\jee\\ecommerce-with-Jee\\src\\main\\images\\"+fileName);
+            }
+            
+            pst.setString(6,"C:\\Users\\Lenovo\\Desktop\\jee\\ecommerce-with-Jee\\src\\main\\images\\"+fileName);
             pst.setInt(7, stock);
 
             result =  pst.executeUpdate();

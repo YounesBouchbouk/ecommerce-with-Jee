@@ -63,7 +63,7 @@
         <div class="card">
             <div class="card-body">
                     <div class="container">
-                      <form action="/Ecom/CreateProduct" method="post">
+                      <form action="/Ecom/CreateProduct" method="post" enctype="multipart/form-data">
                         <div class="row">
                           <div class="col-12 form-group">
                             <input type="text" class="form-control" name="product_name" placeholder="Product Name *">
@@ -100,9 +100,13 @@
                             <input type="text" class="form-control" name="descript" placeholder="Description *">
                           </div>
                 		</div>
-                		<div class="row">
+                		<div class="row my-3 mx-1">
+                			<input type="file" name="file" />
+                		</div>
+                		<div class="row mx-1">
                 			<input type="submit" value="Add" class="btn mx-2 btn-primary">
                 		</div>
+                		
             </div>  
             
         </form>
