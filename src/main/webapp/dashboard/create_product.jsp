@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
@@ -84,41 +83,46 @@
         <div class="card">
             <div class="card-body">
                     <div class="container">
-                      <form>
+                      <form action="/Ecom/CreateProduct" method="post">
                         <div class="row">
                           <div class="col-12 form-group">
-                            <input type="text" class="form-control" name="buyer_name" placeholder="Product Name *">
+                            <input type="text" class="form-control" name="product_name" placeholder="Product Name *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
+                            <input type="text" class="form-control" name="price" placeholder="Price *">
                           </div>
                           <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="email" placeholder="Stock *">
+                            <input type="text" class="form-control" name="stock" placeholder="Stock *">
                           </div>
                         </div>
                         <div class="row">
                           <div class="col-3 form-group">
                             <label></label>
-                              <select class="custom-select">
-                                <option selected>Product Status...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                              <select class="custom-select" name="categorie">
+                                <option selected>Product Categorie...</option>
+                                <option value="1">Watches</option>
+                                <option value="2">Laptop</option>
+                                <option value="3">Smartphone</option>
+                                <option value="4">Headphone</option>
                               </select>
                           </div>
                         </div>
-                           <div class="row">
+                           <div class="row mx-1">
                              <label>Rate Please<sup class="text-danger">* </sup></label>
                             <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
-                          </div>
+                            <input type="text" class="form-control" name="nbEtoile" placeholder="nb Etoile *">
+                          	</div>
                             <div class="col-3 form-group">
-                            <input type="text" class="form-control" name="phone" placeholder="Price *">
+                            <input type="text" class="form-control" name="decript" placeholder="Description *">
                           </div>
-                </div>
+                		</div>
+                		<div class="row">
+                			<input type="submit" value="Add" class="btn mx-2 btn-primary">
+                		</div>
             </div>  
+            
         </form>
             </div>
         </div>
