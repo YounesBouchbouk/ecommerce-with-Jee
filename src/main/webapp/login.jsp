@@ -158,6 +158,24 @@
  	  
 %>
 
+
+    <% 
+  
+  if(request.getAttribute("succsign") != null){
+	  
+	  
+ 	  
+%>
+                
+                <div class="alert alert-success" role="alert">
+  					${succsign} 
+					</div>
+					
+					<% 
+  
+  }  
+%>
+
                 <main class="row">
                     <div class="col-lg-4 col-md-6 col-sm-8 mx-auto bg-white py-3 mb-4">
                         <div class="row">

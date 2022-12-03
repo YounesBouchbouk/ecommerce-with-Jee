@@ -72,10 +72,10 @@ public class CreateProduct extends HttpServlet {
             Part filePart = request.getPart("file");
             String fileName = filePart.getSubmittedFileName();
             for (Part part : request.getParts()) {
-              part.write("C:\\Users\\Lenovo\\Desktop\\jee\\ecommerce-with-Jee\\src\\main\\images\\"+fileName);
+              part.write("D:\\JEE\\Ecom\\src\\main\\webapp\\images"+fileName);
             }
             
-            pst.setString(6,"C:\\Users\\Lenovo\\Desktop\\jee\\ecommerce-with-Jee\\src\\main\\images\\"+fileName);
+            pst.setString(6,"D:\\JEE\\Ecom\\src\\main\\webapp\\images"+fileName);
             pst.setInt(7, stock);
 
             result =  pst.executeUpdate();

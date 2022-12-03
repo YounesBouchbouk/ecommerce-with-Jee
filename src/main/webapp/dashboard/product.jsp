@@ -1,5 +1,5 @@
 <html>
-<% if(session.getAttribute("adminId").equals(new Integer(1))){ %>
+
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -117,5 +117,4 @@
         });
     });
 </script>
-<% } %>
 </html>

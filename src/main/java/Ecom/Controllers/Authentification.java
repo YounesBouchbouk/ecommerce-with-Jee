@@ -59,13 +59,21 @@ public class Authentification extends HttpServlet {
                     
                     if (r.next()) {
                         
+                 
+                        HttpSession se= request.getSession(true);
+                        se.setAttribute("userId", r.getString(1));
                         
-                       
-                        
-                        HttpSession se=request.getSession(true);
-                        se.setAttribute("email", email);
                         se.setMaxInactiveInterval(30);
-                        request.getRequestDispatcher("/index.jsp").include(request, response);
+                        
+                        System.out.println(r.getString(5));
+                        
+                        if(r.getString(5).equals("admin")) {
+                        	response.sendRedirect("/Ecom/dashboard/order_list.jsp");
+
+                        }else {
+                        	
+                        	request.getRequestDispatcher("/index.jsp").include(request, response);
+                        }
                         
                     }
                     else{

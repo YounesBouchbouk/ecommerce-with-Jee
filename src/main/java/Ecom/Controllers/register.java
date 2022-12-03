@@ -45,7 +45,7 @@ public class register extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		 HttpSession session = request.getSession();
+		
 
 		 Connection connection = dbConnection.getConnection();
 		if(request.getParameter("password").equals(request.getParameter("password-confirm"))){
@@ -55,6 +55,7 @@ public class register extends HttpServlet {
 		    user.setFirstName(request.getParameter("firstName"));
 		    user.setLastName(request.getParameter("lastName"));
 		    user.setEmail(request.getParameter("email"));
+		    user.setUsername(request.getParameter("firstName")+ request.getParameter("lastName"));
 		    System.out.println(user.toString());
 		   // BaseDao baseDao = new BaseDaoImpl();
 		   // msg = baseDao.register(user);
@@ -70,24 +71,24 @@ public class register extends HttpServlet {
 
 	            int result =  pst.executeUpdate();
 	            
-	            session.setAttribute("User_id", 1);
-				session.setMaxInactiveInterval(60*30*30*1000);
 	            
-	            request.setAttribute("succ", "u have registred successfully");
-				request.setAttribute("error", null);
+	            
+	            request.setAttribute("succsign", "u have registred successfully");
+	            request.getRequestDispatcher("/login.jsp").include(request, response);
 				
 	        } catch (SQLException exp) {
 	            System.out.println(exp.getMessage());
-	            request.setAttribute("succ", null);
+	            
 				request.setAttribute("error", exp.getMessage());
+				request.getRequestDispatcher("/register.jsp").include(request, response);
+
 	        }
 		}else {
 			System.out.println("Password and Conform Passwords must be same");
-			request.setAttribute("succ", null);
 			request.setAttribute("error", "Password and Conform Passwords must be same");
+			request.getRequestDispatcher("/register.jsp").include(request, response);
 		}
 		
-		request.getRequestDispatcher("/register.jsp").include(request, response);
 	}
 
 }

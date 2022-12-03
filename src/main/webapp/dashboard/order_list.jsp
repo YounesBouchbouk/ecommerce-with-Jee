@@ -1,5 +1,5 @@
 <html>
-<% if(session.getAttribute("adminId").equals(new Integer(1))){ %>
+
 <head>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -78,8 +78,8 @@
                             <th scope="col">user name</th>
                             <th scope="col">Nom du produit</th>
                             <th scope="col">Date commande</th>
-                            <th scope="col">Date livraison</th>
                             <th scope="col">Date envoi</th>
+                           
                         </thead>
                         <tbody>
                         	<%@ page import="Ecom.OrderList" %>
@@ -92,7 +92,7 @@
                                 <td><%= i.getProductName() %></td>
                                 <td><%= i.getDateCommande() %></td>
                                 <td><%= i.getDateLivraison() %></td>
-                                <td><%= i.getDateEnvoi() %></td>
+                                
                                
                             </tr>
                             <% } %>
@@ -113,5 +113,5 @@
 		});
 	});
 </script>
-<% } %>
+
 </html>
